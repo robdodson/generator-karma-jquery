@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "description": "Yeoman generator for building jQuery plugins with Karma and Jasmine",
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "karma",
+    "jquery",
+    "jasmine"
   ],
   "homepage": "https://github.com/robdodson/generator-karma-jquery",
   "bugs": "https://github.com/robdodson/generator-karma-jquery/issues",
