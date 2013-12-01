@@ -12,6 +12,15 @@
 3. Run: `grunt` to start up Karma and a LiveReload server on port `9000`
 4. Write your plugin **with tests.** Conquer the internets.
 
+## Grunt Tasks
+
+Task        | Description
+---         | ---
+`default`   | Start a Karma server on port `9876` and a LiveReload server on port `9000`
+`report`    | Run Karma and generate code coverage reports in `test/coverage` and browser reports in `test/report`
+`server`    | Run a LiveReload server on port `9000`
+`release`   | Concat and minify JavaScript and output to `dist` directory
+
 ## Soul-crushing Gotchas
 
 Karma tests **must** be in the active browser tab. This means you should connect to the LiveReload server in **a separate browser window.** Otherwise everything will be really slow. And you'll be bummed.
