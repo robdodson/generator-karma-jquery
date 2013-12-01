@@ -11,9 +11,15 @@
 
 ## Getting Started
 
-1. Install the generator by running: `npm install -g generator-karma-jasmine-jquery`
-2. Run: `yo karma-jasmine-jquery`
-3. Start writing your jQuery plugin :)
+1. Install the generator by running: `npm install -g generator-karma-jquery`
+2. Run: `yo karma-jquery`
+3. Write your plugin **with tests.** Conquer the internets.
+
+## What's Included
+
+- Fixtures with [jasmine-jquery](https://github.com/velesin/jasmine-jquery)
+- Code Coverage with [karma-coverage](https://github.com/karma-runner/karma-coverage)
+- HTML Reports with [karma-html-reporter](https://github.com/dtabuenc/karma-html-reporter)
 
 ## License
 
