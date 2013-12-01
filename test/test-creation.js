@@ -23,6 +23,7 @@ describe('karma-jquery generator', function () {
     var expected = [
       // add files you expect to exist here.
       'bower.json',
+      'Gruntfile.js',
       'index.html',
       'karma.conf.js',
       'package.json',

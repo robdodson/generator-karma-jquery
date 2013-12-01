@@ -1,9 +1,11 @@
 {
-  "name": "<%= _.slugify(appname) %>",
-  "version": "0.0.0",
-  "description": "Yeoman generator for building jQuery plugins with Karma and Jasmine",
+  "name": "<%= slugname %>",
+  "version": "<%= props.version %>",
+  "description": "<%= props.title %>",
   "dependencies": {
-    "jquery": "~2.0.3",
+    "jquery": "<%= props.jquery_version ? '~' + props.jquery_version : 'latest' %>"
+  },
+  "devDependencies": {
     "jasmine-jquery": "~1.5.93"
   }
 }
