@@ -14,7 +14,7 @@
 
 ## Soul-crushing Gotchas
 
-Karma tests in the browser **must** be in the active tab to run quickly. This means you should connect to the LiveReload server in **a separate browser window.** Otherwise everything will be really slow. And you'll be bummed. (╯°□°）╯︵ ┻━┻
+Karma tests **must** be in the active browser tab. This means you should connect to the LiveReload server in **a separate browser window.** Otherwise everything will be really slow. And you'll be bummed.
 
 ## What's Included
 
