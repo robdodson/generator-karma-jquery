@@ -17,7 +17,7 @@ module.exports = function (grunt) {
       ' Licensed MIT */\n',
     // Task configuration.
     clean: {
-      files: ['dist']
+      files: ['dist', 'test/coverage', 'test/report']
     },
     concat: {
       options: {
@@ -96,8 +96,8 @@ module.exports = function (grunt) {
   grunt.option('force', true);
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'karma:unit', 'server']);
+  grunt.registerTask('default', ['clean', 'jshint', 'karma:unit', 'server']);
   grunt.registerTask('server', ['connect', 'watch']);
-  grunt.registerTask('report', ['jshint', 'karma:report']);
-  grunt.registerTask('release', ['jshint', 'clean', 'concat', 'uglify']);
+  grunt.registerTask('report', ['clean', 'jshint', 'karma:report']);
+  grunt.registerTask('release', ['clean', 'jshint', 'concat', 'uglify']);
 };

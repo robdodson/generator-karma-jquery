@@ -57,7 +57,7 @@ module.exports = function (config) {
 
     // test results reporter to use
     // possible values: 'dots', 'progress', 'junit', 'growl', 'coverage'
-    reporters: ['progress', 'html', 'coverage'],
+    reporters: ['progress'],
 
     // configure the html reporter.
     // this will output reports in the test/report dir which can be opened
