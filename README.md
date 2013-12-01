@@ -2,6 +2,9 @@
 
 [Yeoman][] generator for building jQuery plugins with Karma and Jasmine. Based on the [jQuery Boilerplate][] by [@zenorocha][]
 
+*OMG, we codin' so fast!* <br>
+![](http://media.giphy.com/media/9CffOPMLx0Hf2/giphy.gif)
+
 [Yeoman]: http://yeoman.io
 [jQuery Boilerplate]: https://github.com/jquery-boilerplate/generator-jquery-boilerplate
 [@zenorocha]: https://github.com/zenorocha
