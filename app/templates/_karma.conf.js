@@ -11,6 +11,10 @@ module.exports = function (config) {
     frameworks: ['jasmine'],
 
 
+    // enable / disable watching file and executing tests whenever any file changes
+    autoWatch: false,
+
+
     // list of files / patterns to load in the browser
     files: [
       // include dependencies
@@ -18,17 +22,11 @@ module.exports = function (config) {
       'bower_components/jasmine-jquery/lib/jasmine-jquery.js',
 
       // include our JavaScript files
-      {
-        pattern: 'scripts/example.js',
-        watched: true
-      },
+      'scripts/example.js',
 
       // simple patterns to load the needed testfiles
       // equals to {pattern: 'test/*-test.js', watched: true, served: true, included: true}
-      {
-        pattern: 'test/*-test.js',
-        watched: true
-      },
+      'test/*-test.js',
 
       // fixtures should be served by the webserver but not included on
       // the page with <script> tags
@@ -87,10 +85,6 @@ module.exports = function (config) {
     // level of logging
     // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
     logLevel: config.LOG_INFO,
-
-
-    // enable / disable watching file and executing tests whenever any file changes
-    autoWatch: true,
 
 
     // Start these browsers, currently available:

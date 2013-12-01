@@ -67,7 +67,7 @@ module.exports = function (grunt) {
         configFile: 'karma.conf.js'
       },
       unit: {
-        autoWatch: true
+        background: true
       },
       report: {
         singleRun: true,
@@ -77,7 +77,7 @@ module.exports = function (grunt) {
     },
     watch: {
       options: {
-        livereload: false
+        livereload: true
       },
       html: {
         files: ['index.html']
@@ -85,15 +85,10 @@ module.exports = function (grunt) {
       styles: {
         files: ['styles/**/*.css']
       },
-      scripts: {
-        files: ['scripts/**/*.js']
+      karma: {
+        files: ['scripts/**/*.js', 'test/**/*-test.js'],
+        tasks: ['karma:unit:run']
       }
-    },
-    concurrent: {
-      options: {
-        logConcurrentOutput: true
-      },
-      target: ['karma:unit', 'server']
     }
   });
 
@@ -101,7 +96,7 @@ module.exports = function (grunt) {
   grunt.option('force', true);
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'concurrent']);
+  grunt.registerTask('default', ['jshint', 'karma:unit', 'server']);
   grunt.registerTask('server', ['connect', 'watch']);
   grunt.registerTask('report', ['jshint', 'karma:report']);
   grunt.registerTask('release', ['jshint', 'clean', 'concat', 'uglify']);
