@@ -9,7 +9,7 @@
 
 1. Install the generator by running: `npm install -g generator-karma-jquery`
 2. Run: `yo karma-jquery`
-3. Run: `grunt` to start up Karma and a LiveReload server on port `9000`
+3. Run: `grunt` to start up Karma on port `9876` and a LiveReload server on port `9000`
 4. Write your plugin **with tests.** Conquer the internets.
 
 ## Grunt Tasks

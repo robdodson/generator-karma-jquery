@@ -21,7 +21,7 @@
       "type": "<%= props.license %>"
     }
   ],
-  "main": "karma.conf.js",
+  "main": "scripts/example.js",
   "directories": {
     "test": "test"
   },
